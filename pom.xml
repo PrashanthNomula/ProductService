@@ -50,6 +50,24 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<plugin>
+        <groupId>com.lazerycode.selenium</groupId>
+        <artifactId>driver-binary-downloader-maven-plugin</artifactId>
+        <version>1.0.17</version>
+        <configuration>
+            <!-- root directory that downloaded driver binaries will be stored in -->
+            <rootStandaloneServerDirectory>/my/location/binaries</rootStandaloneServerDirectory>
+            <!-- Where you want to store downloaded zip files -->
+            <downloadedZipFileDirectory>/my/location/zips</downloadedZipFileDirectory>
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>selenium</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
 		</plugins>
 	</build>
 </project>
