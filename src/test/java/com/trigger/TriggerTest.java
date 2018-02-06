@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.model.Amazon;
+import com.model.CrossBrowser;
+import com.model.EggTimer;
 import com.model.ResourceLoader;
 
 public class TriggerTest {
@@ -18,10 +20,11 @@ public class TriggerTest {
 	static WebDriver driver;
 	ResourceLoader googlepage;
 	Amazon amazon;
+	EggTimer eggtimer;
 
 	
 	
-	@Test
+	//@Test(enabled=false)
 	public void test() {
 		logger.info("ResourceLoader::loadDriver() called");
 		System.setProperty("webdriver.chrome.driver",
@@ -42,5 +45,6 @@ public class TriggerTest {
 			logger.info("ResourceLoader::loadDriver() price: "+price +" is more than 1000" );	
 		}
 	}
-
-}
+	
+	
+	}

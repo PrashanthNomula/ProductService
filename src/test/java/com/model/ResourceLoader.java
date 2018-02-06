@@ -25,7 +25,7 @@ public class ResourceLoader {
 	@FindBy(how = How.NAME, using = "q") 
 	WebElement e;
 	
-	
+	@Test
 	public void loadDriver() {
 			
 		e.sendKeys("Iphone");
